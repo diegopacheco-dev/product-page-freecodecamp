@@ -1,13 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-container">
+        <img src="" alt="" id="header-img" />
+        <nav id="nav-bar">
+          <ul>
+            <li class="nav-link"><a href="">Features</a></li>
+            <li class="nav-link"><a href="">How It Works</a></li>
+            <li class="nav-link"><a href="">Pricing</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2 class="hero__title">Handcrafted, home-made masterpieces</h2>
+        <form id="form" action="https://www. reecodecamp.com/email-submit">
+          <input type="email" id="email" placeholder="Enter your email address" />
+          <input type="submit" id="submit" value="GET STARTED" />
+        </form>
+      </section>
+
+      <section class="description">
+        <div class="desc-item">
+          <div class="des-icon">
+            <i class="fas fa-fire"></i>
+          </div>
+          <div>
+            <h4 class="desc-title">Premium Materials</h4>
+            <p class="desc-text">
+              Our trombones use the shiniest brass which is sourced locally.
+              This will increase the longevity of your purchase.
+            </p>
+          </div>
+        </div>
+        <div class="desc-item">
+          <div class="des-icon">
+            <i class="fas fa-truck"></i>
+          </div>
+          <div>
+            <h4 class="desc-title">Fast Shipping</h4>
+            <p class="desc-text">
+              We make sure you recieve your trombone as soon as we have finished
+              making it. We also provide free returns if you are not satisfied.
+            </p>
+          </div>
+        </div>
+        <div class="desc-item">
+          <div class="des-icon">
+            <i class="fas fa-battery-full"></i>
+          </div>
+          <div>
+            <h4 class="desc-title">Quality Assurance</h4>
+            <p class="desc-text">
+              For every purchase you make, we will ensure there are no damages
+              or faults and we will check and test the pitch of your instrument.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-example">
+        <iframe 
+        id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section class="pricing">
+        <div class="product-wrapper">
+          <div class="product">
+            <h5 class="product__title">TENOR TROMBONE</h5>
+            <p class="product__price">600</p>
+            <p class="product__desc">
+              Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.
+            </p>
+            <button class="product__btn">SELECT</button>
+          </div>
+        </div>
+        <div class="product-wrapper">
+          <div class="product">
+            <h5 class="product__title">BASS TROMBONE</h5>
+            <p class="product__price">900</p>
+            <p class="product__desc">
+              Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.
+            </p>
+            <button class="product__btn">SELECT</button>
+          </div>
+        </div>
+        <div class="product-wrapper">
+          <div class="product">
+            <h5 class="product__title">VALVE TROMBONE</h5>
+            <p class="product__price">1200</p>
+            <p class="product__desc">
+              Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.
+            </p>
+            <button class="product__btn">SELECT</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <ul class="footer__list">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p class="footer__copyright">
+            Copyright 2016, Original Trombones
+        </´+>
+    </footer>
+  </body>
 </html>
