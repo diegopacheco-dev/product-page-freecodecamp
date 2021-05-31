@@ -16,6 +16,12 @@
 html {
     scroll-behavior: smooth;
 }
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
 li {
     list-style: none;
 }
@@ -53,15 +59,15 @@ header {
     justify-content: space-between;
     position: relative;
 }
-.header-logo {
+.header__logo {
     width: 19rem;
     display: flex;
     align-items: center;
 }
-.header-logo img {
+.header__logo img {
     width: 100%;
 }
-.header-nav {
+.header__nav {
     width: 40%;
 }
 .nav-menu {
@@ -70,8 +76,9 @@ header {
     justify-content: space-around;
     align-items: center;
 }
-.nav-menu li a {
+.nav-link {
     color: black;
+    font-size: 1rem;
 }
 .menu-toggle {
     display: flex;
@@ -249,7 +256,7 @@ footer {
     .--show-menu {
         left: 0;
     }    
-    .nav-link {
+    .nav-menu li {
         padding: 1rem;
         width: 100%;
         text-align: center;

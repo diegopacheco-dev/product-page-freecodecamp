@@ -20,4 +20,4 @@ const navLinkIsActivated = (linksClass, menuId) => {
 }
 
 showMenu('menuToggle', 'navMenu');
-navLinkIsActivated('.menu-link', 'navMenu');
+navLinkIsActivated('.nav-link', 'navMenu');
