@@ -11,27 +11,33 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       referrerpolicy="no-referrer"
     />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <header id="header">
       <div class="header-container">
-        <img src="" alt="" id="header-img" />
-        <nav id="nav-bar">
+        <div class="header-logo">
+          <img src="./image/product-landing-page-logo.png" alt="" id="header-img" />
+        </div>
+        <nav class="header-navbar" id="nav-bar">
           <ul>
             <li class="nav-link"><a href="">Features</a></li>
             <li class="nav-link"><a href="">How It Works</a></li>
             <li class="nav-link"><a href="">Pricing</a></li>
           </ul>
         </nav>
+        <div class="menu-toggle" id="menuToggle">
+          <i class='bx bx-menu'></i>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="hero">
         <h2 class="hero__title">Handcrafted, home-made masterpieces</h2>
-        <form id="form" action="https://www. reecodecamp.com/email-submit">
-          <input type="email" id="email" placeholder="Enter your email address" />
-          <input type="submit" id="submit" value="GET STARTED" />
+        <form class="hero__form" id="form" action="https://www. reecodecamp.com/email-submitls">
+          <input class="input-email" type="email" id="email" placeholder="Enter your email address" />
+          <input class="form__submit" type="submit" id="submit" value="GET STARTED" />
         </form>
       </section>
 
