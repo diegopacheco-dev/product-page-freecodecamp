@@ -2,6 +2,7 @@
 :root {
     --main-width: 56%;
     --color-primary:var(--color-primary); 
+    --color-secondary: #dadadad5; 
 }
 * {
     margin: 0;
@@ -149,7 +150,7 @@ main {
     text-align: center;
 }
 .product__title {
-    background-color: #dadadad5;
+    background-color: var(--color-secondary);
     padding: 1rem;
     font-size: 1.05rem;
     font-weight: 500;
@@ -166,4 +167,29 @@ main {
 .product__btn {
     margin: 1rem;
     padding: 0.5rem 0.9rem;
+}
+
+/* FOOTER */
+footer {
+    width: var(--main-width);
+    background-color: var(--color-secondary);
+    margin: 2rem auto 0;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+.footer__list {
+    display: flex;
+    justify-content: flex-end;
+}
+.footer__list li {
+    padding: 0 .8rem;
+}
+.footer__list li a {
+    color: black;
+}
+.footer__copyright {
+    color: rgb(71, 71, 71);
 }
