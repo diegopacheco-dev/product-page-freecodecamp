@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 :root {
     --main-width: 56%;
-    --color-primary:var(--color-primary); 
+    --color-primary: #ffbb00; 
     --color-secondary: #dadadad5; 
+    --color-secondary-hover:#ffd900; 
 }
 * {
     margin: 0;
@@ -24,7 +25,7 @@ a {
     transition: all .3s ;
 }
 .btn-primary:hover {
-    background-color: #ffe70a;
+    background-color: var(--color-secondary-hover);
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -193,3 +194,65 @@ footer {
 .footer__copyright {
     color: rgb(71, 71, 71);
 }
+@media screen and (max-width: 1440px) {
+    :root {
+        --main-width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    :root {
+        --main-width: 100%;
+    }
+    .desc-info {
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .product-wrapper {
+        flex: 100%;
+    }
+    .product {
+        max-width: 19rem;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        width: 100%;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    .header-navbar ul {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        margin: 0 auto;
+        flex-direction: column;
+        top: 4rem;
+        left: 100%;
+        justify-content: flex-start;
+    }
+    .nav-link {
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(221, 221, 221, 0.425);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .desc-icon {
+        display: none;
+    }
+    .desc-info {
+        text-align: center;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
