@@ -21,6 +21,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    background-color: #F2F2F2;
 }
 .header-container {
     width: 95%;
@@ -88,8 +89,30 @@ header {
     color: #3a3a3a;
 }
 
+/* SECTION DESCRIPTION */
+main {
+    width: 56%;
+    margin: 0 auto;
+}
 
-
-
-
-
+.description {
+    margin-top: 5rem;
+}
+.desc-item {
+    margin: 0 auto;
+    display: flex;
+}
+.desc-icon {
+    min-width: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F29F05;
+}
+.desc-info {
+    padding: 1.5rem 0;
+}
+.desc-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
