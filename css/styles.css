@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
+:root {
+    --main-width: 56%;
+    --color-primary:var(--color-primary); 
+}
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +13,17 @@ li {
 }
 a {
     text-decoration: none;
+}
+.btn-primary {
+    outline: none;
+    border: none;
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 700;
+    transition: all .3s ;
+}
+.btn-primary:hover {
+    background-color: #ffe70a;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -81,17 +95,13 @@ header {
 .form__submit {
     width: 12rem;
     height: 2rem;
-    outline: none;
-    border: none;
-    background-color: #F2E635;
-    font-weight: bold;
     font-size: 1.05rem;
-    color: #3a3a3a;
+    
 }
 
 /* SECTION DESCRIPTION */
 main {
-    width: 56%;
+    width: var(--main-width);
     margin: 0 auto;
 }
 
@@ -107,7 +117,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #F29F05;
+    color: var(--color-primary);
 }
 .desc-info {
     padding: 1.5rem 0;
@@ -115,4 +125,45 @@ main {
 .desc-title {
     font-size: 1.5rem;
     font-weight: 500;
+}
+
+/* SECTION VIDEO */
+.video-example {
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* SECTION PRICING */
+.pricing {
+    margin-top: 4.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-wrapper {
+    flex: 1;
+    padding: 0.7rem;
+}
+.product {
+    border: 1px solid gray;
+    text-align: center;
+}
+.product__title {
+    background-color: #dadadad5;
+    padding: 1rem;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+.product__price {
+    font-weight: 700;
+    padding: 1rem 0 0.5rem;
+    font-size: 1.4rem;
+}
+.product__desc {
+    line-height: 1.6rem;
+    padding: 0.5rem;
+}
+.product__btn {
+    margin: 1rem;
+    padding: 0.5rem 0.9rem;
 }
