@@ -17,13 +17,16 @@
     <header id="header">
       <div class="header-container">
         <div class="header-logo">
-          <img src="./image/product-landing-page-logo.png" alt="" id="header-img" />
+          <a href="#">
+            <img src="./image/product-landing-page-logo.png" alt="" id="header-img" />
+
+          </a>
         </div>
-        <nav class="header-navbar" id="nav-bar">
-          <ul>
-            <li class="nav-link"><a href="">Features</a></li>
-            <li class="nav-link"><a href="">How It Works</a></li>
-            <li class="nav-link"><a href="">Pricing</a></li>
+        <nav class="header-nav" id="nav-bar">
+          <ul class="nav-menu" id="navMenu">
+            <li class="nav-link"><a class="menu-link" href="#description">Features</a></li>
+            <li class="nav-link"><a class="menu-link" href="#howItWorks">How It Works</a></li>
+            <li class="nav-link"><a class="menu-link" href="#pricing">Pricing</a></li>
           </ul>
         </nav>
         <div class="menu-toggle" id="menuToggle">
@@ -41,7 +44,7 @@
         </form>
       </section>
 
-      <section class="description">
+      <section class="description" id="description">
         <div class="desc-item">
           <div class="desc-icon">
             <i class="fas fa-fire fa-3x"></i>
@@ -80,7 +83,7 @@
         </div>
       </section>
 
-      <section class="video-example">
+      <section class="video-example" id="howItWorks">
         <iframe 
         id="video"
           width="560"
@@ -93,7 +96,7 @@
         ></iframe>
       </section>
 
-      <section class="pricing">
+      <section class="pricing" id="pricing">
         <div class="product-wrapper">
           <div class="product">
             <h5 class="product__title">TENOR TROMBONE</h5>
@@ -150,5 +153,7 @@
             Copyright 2016, Original Trombones
         </small>
     </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

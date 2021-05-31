@@ -4,11 +4,17 @@
     --color-primary: #ffbb00; 
     --color-secondary: #dadadad5; 
     --color-secondary-hover:#ffd900; 
+    --color-bg:#f3f3f3;
+
+    --navbar-height: 3.8rem;
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
 }
 li {
     list-style: none;
@@ -29,7 +35,7 @@ a {
 }
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: #F2F2F2;
+    background-color: var(--color-bg);
 }
 
 /* HEADER */
@@ -37,11 +43,11 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: #F2F2F2;
+    background-color: var(--color-bg);
 }
 .header-container {
     width: 95%;
-    height: 3.8rem;
+    height: var(--navbar-height);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -55,16 +61,16 @@ header {
 .header-logo img {
     width: 100%;
 }
-.header-navbar {
+.header-nav {
     width: 40%;
 }
-.header-navbar ul {
+.nav-menu {
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.header-navbar ul li a {
+.nav-menu li a {
     color: black;
 }
 .menu-toggle {
@@ -108,7 +114,8 @@ main {
 }
 
 .description {
-    margin-top: 5rem;
+    margin-top: 2rem;
+    padding-top: var(--navbar-height);
 }
 .desc-item {
     margin: 0 auto;
@@ -131,14 +138,15 @@ main {
 
 /* SECTION VIDEO */
 .video-example {
-    margin-top: 3.5rem;
+    padding-top: var(--navbar-height);
     display: flex;
     justify-content: center;
 }
 
 /* SECTION PRICING */
 .pricing {
-    margin-top: 4.5rem;
+    margin-top: .7rem;
+    padding-top: var(--navbar-height);
     display: flex;
     flex-wrap: wrap;
 }
@@ -226,17 +234,21 @@ footer {
     .menu-toggle {
         display: flex;
     }
-    .header-navbar ul {
+    .nav-menu {
         position: absolute;
         width: 100%;
         height: auto;
-        background-color: white;
+        background-color: #f7f7f7;
         margin: 0 auto;
         flex-direction: column;
-        top: 4rem;
+        top: var(--navbar-height);
         left: 100%;
         justify-content: flex-start;
+        transition: all .3s ease;
     }
+    .--show-menu {
+        left: 0;
+    }    
     .nav-link {
         padding: 1rem;
         width: 100%;
